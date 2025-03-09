@@ -9,6 +9,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 70px;
+    border-bottom: solid 2px #666;
 }
 
 nav a{
@@ -38,6 +39,15 @@ nav .titulo-site{
     color: #000000;
 }
 
+.menu a.active {
+color: #f6e965;
+}
+
+.menu a.active:hover{
+    color: #000;
+
+}
+
 .menu li {
     padding-block: 0;
     letter-spacing: 3px;
@@ -52,6 +62,7 @@ nav .titulo-site{
 
 
 footer {
+    border-top: solid 2px #666;
     background-color: #000000;
     color: white;
     padding: 20px 0;
@@ -149,4 +160,44 @@ footer {
     text-decoration: none;
     color: #008cba;
     font-size: 20px;
+}
+
+.about-container {
+    display: flex;
+    align-content: center;
+    width: 95%;
+    height: 100vh;
+    align-items: center;
+    background: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-image {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 25px 0 25px;
+    border: solid 3px #fff;
+}
+.about-text {
+    max-width: 550px;
+}
+.about-text h2 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.highlight {
+    font-style: italic;
+    font-weight: bold;
+}
+.about-text p {
+    margin-left: 45px;
+    font-size: 14px;
+    color: #dadada;
+    line-height: 1.5;
 }
