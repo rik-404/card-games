@@ -1,0 +1,87 @@
+/* Reset CSS - Remove estilos padrão dos navegadores */
+
+/* Box sizing border-box para todos os elementos */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 100%;
+  }
+  
+  /* Remove estilos padrão de alguns elementos */
+  html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Garante que os elementos de mídia não ultrapassem seus containers */
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Ajusta a herança da fonte */
+  body, input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* Remover aparência padrão de botões e inputs */
+  button, input, textarea, select {
+    background: none;
+    border: none;
+    appearance: none;
+  }
+  
+  /* Garante que os links tenham aparência uniforme */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* Normaliza tabelas */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+  /* Removendo estilos padrão do fieldset e legend */
+  fieldset {
+    border: none;
+  }
+  legend {
+    display: block;
+    width: 100%;
+  }
+  
+  /* Ajustes para listas */
+  ul, ol {
+    padding-left: 1rem;
+  }
+  
+  /* Reset de cabeçalhos */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+  }
+  
+  /* Cursor padrão para elementos interativos */
+  button, a {
+    cursor: pointer;
+  }
+  
+  /* Suaviza a rolagem */
+  html {
+    scroll-behavior: smooth;
+  }
+  
