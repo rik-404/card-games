@@ -33,4 +33,67 @@
         text-align: center;
         margin: 10px 0;
     }
+    #rodape h3{
+        font-size: 20px;
+        color: #f6e965;
+        box-shadow: #000000;
+    }
+    .nomerodape p{
+        font-size: 10px;
+    }
+    .container {
+        flex-direction: column; /* Empilha os elementos */
+        align-items: center; /* Centraliza os itens */
+        justify-content: center; /* Centraliza verticalmente */
+        background-position: center; /* Centraliza a imagem de fundo */
+        background-size: cover; /* Faz a imagem cobrir o fundo */
+    }
+
+    .right {
+        order: -1; /* Move o .right para cima */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .left, .right {
+        width: 90%; /* Ajusta a largura para melhor exibição */
+    }
+
+    .btn-whatsapp {
+        display: flex;
+        justify-content: center; /* Centraliza o botão */
+    }
+    .operation{
+        max-width: 85%;
+    }
+    .operation h2{
+        font-size: 20px;
+    }
+
+    .operation p{
+        font-size: 15px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Garante que ocupa toda a tela */
+    height: auto; /* Permite que o conteúdo expanda */
+    padding: 20px; /* Adiciona espaço interno */
+    overflow: visible; /* Evita cortes */
+
+    background-position: center; /* Centraliza o background */
+    background-size: cover; /* Ajusta o background para cobrir todo o espaço */
+}
+}
+
+.about-image {
+   display: none;
+}
+
+.about-text {
+    max-width: 100%; /* Mantém o texto dentro da tela */
+    font-size: 16px; /* Ajusta o tamanho da fonte para leitura */
+    line-height: 1.5; /* Melhora a legibilidade */
 }
