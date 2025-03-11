@@ -1,0 +1,36 @@
+/* Estiliza o botão do menu hamburguer */
+.menu-toggle {
+    display: none; /* Oculta por padrão */
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Configurações para telas menores */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #000;
+        padding: 10px 0;
+    }
+
+    .menu.active {
+        display: flex; /* Exibe o menu quando ativado */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o botão do menu em telas pequenas */
+    }
+
+    .menu li {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
